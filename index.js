@@ -10,8 +10,8 @@ const port = 8000;
 app.use(cors());
 const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
-app.get('/', (req, ers) => {
-    res.send('This api is created by Dhruv Kotawni. Follow him on LinkedIn: https://www.linkedin.com/in/dhruv-kotawani/ and GitHub: https://github.com/druvkotwani  ');
+app.get('/', (req, res) => {
+    res.send('This api is created by Dhruv Kotawni. Follow him on LinkedIn: https://www.linkedin.com/in/dhruv-kotwani/ and GitHub: https://github.com/druvkotwani  ');
 })
 
 app.get('/news', async (req, res) => {
